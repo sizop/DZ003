@@ -10,3 +10,12 @@
 # 11
 # out
 # 1011
+def to_bin(num):
+    temp = []
+    while num > 0:
+        temp.insert(0, num % 2)
+        num //= 2
+    print(*temp, sep='')
+    return temp
+
+to_bin(int(input('Введите число:')))
