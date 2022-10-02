@@ -14,7 +14,7 @@
 # [4, 2, 4, 9]
 # 8
 
-from random import sample, randint
+from random import sample
 def create_new_list(num):
     if num < 0:
         return "Negative value of the number of numbers!"
