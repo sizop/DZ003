@@ -18,8 +18,6 @@ def fib(num):
         num_fib.append(num_fib[i] + num_fib[i - 1])
         num_fib_revers.insert(0, (num_fib[i] + num_fib[i - 1]) * (-1))
     num_fib = num_fib_revers + num_fib
-    print(num_fib)
-    print(num_fib[0])
     return num_fib
 
 
