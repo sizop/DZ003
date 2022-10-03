@@ -25,4 +25,4 @@ def list_rnd(num):
 
 
 list_1 = list_rnd(int(input('Введите количество элементов: ')))
-print(f'min number: {min(list_1)} \nmax number: {max(list_1)}')
+print(f'\nmin number: {min(list_1)} \nmax number: {max(list_1)}')
