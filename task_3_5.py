@@ -12,12 +12,12 @@
 # 5 -3 2 -1 1 0 1 1 2 3 5
 
 def fib(num):
-    num_fib = [-1, 0, 1]
-    num_fib_revers = []
-    for i in range(2, num + 1):
-        num_fib.append(num_fib[i] + num_fib[i - 1])
-        num_fib_revers.insert(0, (num_fib[i] + num_fib[i - 1]) * (-1))
-    num_fib = num_fib_revers + num_fib
+    a, b = 1, 1
+    num_fib = [0]
+    for i in range(num):
+        num_fib.append(a)
+        num_fib.insert(0, a * (-1) ** i)
+        a, b = b, b + a
     return num_fib
 
 
